@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  CALLBACK FUNCTION EXAMPLE..
+        // function greet(name, callback) {
+        //     console.log("Hello, " + name + "how are you");
+        //     callback();
+        // }
+
+        // // Define a callback function
+        // function sayGoodbye() {
+        //     console.log("Goodbye!");
+        // }
+
+        // // Call the greet function with a callback
+        // greet("pranshu",sayGoodbye);
+
+    // HOW TO CHECK IF AN OBJECT IS ARRAY OR NOT
+    
+    // Define an array
+var myArray = [1, 2, 3, 4, 5];
+
+// Check if it's an array
+if (Array.isArray(myArray)) {
+  console.log("It's an array!");
+} else {
+  console.log("It's not an array.");
+}
+
+// Define an object
+var myObject = { name: "John", age: 30 };
+
+// Check if it's an array
+if (Array.isArray(myObject)) {
+  console.log("It's an array!");
+} else {
+  console.log("It's not an array.");
+}
+// duplicate array in js
+function findDuplicates(arr) {
+    let duplicates = arr.filter((item, index) => arr.indexOf(item) !== index);
+    return duplicates;
+}
+
+let myArray = [1, 2, 3, 4, 5, 2, 7, 8, 2];
+let duplicates = findDuplicates(myArray);
+console.log("Duplicate elements:", duplicates); // Output: [2, 2]
+
+
+
+    </script>
+</body>
+
+</html>
